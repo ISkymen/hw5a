@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(fonts/HelveticaNeueCyr-Light.otf);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+.background-transparent  {
+    background: url("img/background.jpg") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.wrapper {
+    background: url("img/background.jpg") no-repeat 0 36px;
+    background-position: bottom left;
+    min-width:770px;
+    max-width: 1215px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 10px 5px #999;
+}
+
+.wrapper>header {
+    background: url("img/sprite.png") no-repeat;
+    line-height: 36px;
+}
+
+.wrapper>header a {
+    color: white;
+}
+
+.login {
+    float: right;
+    background: linear-gradient(to bottom, rgba(79,174,219,1) 0%,rgba(46,122,196,1) 100%);
+    margin: 0 20px;
+    padding: 0 15px;
+    color: white;
+}
+
+.ofers {
+    float: right;
+    background: url("img/sprite.png") no-repeat -724px -76px;
+    padding-left: 49px;
+    margin: 2px 0;
+    border-left: 1px solid #56a2dc;
+    line-height: 32px;
+}
+
+.ofers a {
+    text-decoration: none;
+    line-height: 32px;
+}
+
+ul.menu-main {
+    list-style: none;
+    float: right;
+    margin-right: 12px;
+}
+
+ul.menu-main li {
+    display: inline-block;
+}
+
+ul.menu-main li a {
+    color: #60b5ed;
+    text-decoration: none;
+    padding: 0 12px;
+    display: inline-block;
+    line-height: 36px;
+}
+
+ul.menu-main li a:hover {
+    background: #4eabda;
+    color: white;
+}
+
+.block-login {
+    height: 624px;
+    position: absolute;
+    left: 27%;
+    right: 27%;
+    top: 50%;
+    margin-top: -300px;
+
+}
+
+.block-login header {
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    line-height: 61px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.content {
+    background: rgba(0,0,0,0.6);
+}
+
+.login-wrapper {
+    max-width: 278px;
+    margin: 0 auto;
+    padding: 36px 0 20px;
+    text-align: center;
+}
+
+a.login-facebook {
+    display: block;
+    background: url("img/sprite.png") -1px -73px;
+    height: 35px;
+    width: 276px;
+    font-size: 0;
+    border-radius: 5px;
+}
+
+.ou {
+    height: 37px;
+    background: url("img/sprite.png") -287px -73px;
+    margin: 18px 0;
+}
+
+[type=text],
+[type=email],
+[type=password]{
+    display: block;
+    height: 35px;
+    margin: 20px 0;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #0f0f0f;
+    border: solid #484848;
+    border-width: 0 0 1px 0;
+    color: white;
+}
+
+[type=text]:focus,
+[type=email]:focus,
+[type=password]:focus {
+    background: #1b5288;
+    box-shadow: 0 0 10px #8cf4ff;
+    border-bottom: 1px solid #689bcc;
+}
+
+[type=checkbox] {
+    margin: 0 0 20px -40px;
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+}
+
+.login-form label {
+    color: #ccc;
+}
+
+[type=submit] {
+    background: linear-gradient(to bottom, rgba(103,198,230,1) 0%,rgba(46,122,196,1) 100%);
+    width: 152px;
+    height: 37px;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+[type=submit]:hover, a.login-facebook:hover {
+    box-shadow: 0 0 5px #8cf4ff;
+}
+
+.privacy {
+    color: #ccc;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
